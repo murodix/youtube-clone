@@ -1,0 +1,9 @@
+export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';
+
+
+export const GET_VIDEO_REQUEST = 'GET_VIDEO_REQUEST';
+export const GET_VIDEO_SUCCESS = 'GET_VIDEO_SUCCESS';
+export const GET_VIDEO_FAIL = 'GET_VIDEO_FAIL';
+
+
+export const SET_SEARCH = "SET_SEARCH";

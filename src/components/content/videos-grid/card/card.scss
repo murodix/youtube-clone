@@ -1,0 +1,57 @@
+.card {
+  color: white;
+  height: 300px;
+  width: 350px;
+  flex-basis: 24%;
+  cursor: pointer;
+  user-select: none;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &-details {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+
+      &-right {
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          color: #aaa;
+          font-size: 0.9rem;
+        }
+        .video__title {
+          font-weight: bold;
+        }
+        .channel__name {
+          &:hover {
+            color: white;
+          }
+        }
+
+        .video__desc {
+          text-justify: center;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__channel-img {
+    height: 36px;
+    border-radius: 100%;
+  }
+
+  
+  &__img {
+    height: 200px;
+    width: 100%;
+  }
+}

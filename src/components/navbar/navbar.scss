@@ -1,0 +1,36 @@
+.navbar {
+  height: 56px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 0 16px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(33, 33, 33);
+  z-index: 99;
+
+  &__menuIcon {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__logo {
+    height: 25px;
+    color: white;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+
+    &-container {
+      flex: 1;
+      display: flex;
+    }
+  }
+
+  .searchBar {
+    flex: 2;
+  }
+}

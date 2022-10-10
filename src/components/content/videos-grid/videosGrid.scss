@@ -1,0 +1,14 @@
+.videosGrid {
+  position: absolute;
+  top: var(--tag-slider-height);
+  background-color: #181818;
+
+  &__container {
+    margin: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+}

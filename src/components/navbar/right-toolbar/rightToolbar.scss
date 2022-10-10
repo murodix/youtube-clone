@@ -1,0 +1,27 @@
+.rightToolbar {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  justify-items: center;
+
+  &__profile {
+    background-color: #181818;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+  }
+
+  .icon {
+    color: #757575;
+    cursor: pointer;
+    height: 40px;
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 10px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

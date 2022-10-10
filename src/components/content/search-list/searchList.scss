@@ -1,0 +1,37 @@
+.searchList {
+  position: absolute;
+  top: var(--tag-slider-height);
+  background-color: #181818;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    column-gap: 4rem;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .card {
+    min-width: 900px;
+    &__container {
+      flex-direction: row;
+    }
+
+    .channel__name {
+      padding-bottom: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+    }
+
+    .card__img {
+      width: 400px;
+      min-width: 400px;
+    }
+
+    .card__container-details {
+      margin-left: 10px;
+    }
+  }
+}

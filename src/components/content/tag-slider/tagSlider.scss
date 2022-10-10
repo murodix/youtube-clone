@@ -1,0 +1,63 @@
+.tagSlider {
+  position: fixed;
+  height: var(--tag-slider-height);
+  width: calc(100% - var(--left-side-width));
+  background-color: rgba(33, 33, 33);
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
+  left: var(--left-side-width);
+  z-index: 99;
+
+  &__container {
+    height: 100%;
+    position: relative;
+    &-wrapper {
+      will-change: transform;
+      transition: transform 0.5s cubic-bezier(0.05, 0, 0, 1);
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow-x: hidden;
+      gap: 10px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    z-index: 99;
+    top: 0%;
+    height: 100%;
+
+    &.left {
+      background: linear-gradient(
+        to right,
+        #212121 30%,
+        rgba(33, 33, 33, 0.1) 80%
+      );
+    }
+
+    &.right {
+      right: 0;
+      background: linear-gradient(
+        to left,
+        #212121 30%,
+        rgba(33, 33, 33, 0.1) 80%
+      );
+    }
+  }
+
+  svg::before {
+    height: 100%;
+    width: 50px;
+    content: "";
+    pointer-events: none;
+  }
+
+  .tag:first-of-type {
+    margin-left: 10px;
+  }
+}
